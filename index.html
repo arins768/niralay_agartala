@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niralay Homestay</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        a {
+            color: #2a6f2a;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem 0;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #2a6f2a;
+        }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav img {
+            height: 80px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        /* Hero */
+        #hero {
+            background: url('assets/hero.jpg') center/cover no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 8rem 0;
+        }
+
+        #hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 600px) {
+            .grid-2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Footer */
+        footer {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="assets/logo.jpg" alt="Niralay Homestay Logo" style="width: 120px; height: auto;">
+
+
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#attractions">Attractions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>NIRALAY</h1>
+            <p>Stay Between Woods — Escape to serenity amidst lush fields and gentle woodlands.</p>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Niralay</h2>
+        <p>Niralay Homestay is nestled on Narshingarh PTC Road, Agartala, Tripura. With 4.5+ stars on Google and 4.4 on
+            MakeMyTrip, we offer ten spacious (10×12 ft) rooms, each featuring a king-size bed, attached kitchen &
+            washroom, 24×7 internet, AC, continuous gas, and solar-powered backup. Check-in from 9:30 AM and check-out
+            by 11:00 AM.</p>
+    </section>
+
+    <section id="rooms" class="container">
+        <h2>Rooms & Amenities</h2>
+        <div class="grid grid-2">
+            <div>
+                <h3>Spacious Private Rooms</h3>
+                <ul>
+                    <li>10×12 ft rooms with king-size bed</li>
+                    <li>Attached kitchenette & washroom</li>
+                    <li>Air conditioning & ceiling fan</li>
+                    <li>24 × 7 high-speed Wi-Fi</li>
+                    <li>Continuous gas supply</li>
+                    <li>Solar power backup (60% solar coverage)</li>
+                    <li>On-site parking</li>
+                </ul>
+            </div>
+            <img src="assets/room1.jpg" alt="Room interior">
+        </div>
+    </section>
+
+    <section id="gallery" class="container">
+        <h2>Gallery</h2>
+        <div class="grid grid-3">
+            <img src="assets/room2.jpg" alt="Room view">
+            <img src="assets/room3.jpg" alt="Single bed room">
+            <img src="assets/common.jpg" alt="Common area">
+        </div>
+    </section>
+
+    <section id="attractions" class="container">
+        <h2>Nearby Attractions</h2>
+        <ul>
+            <li>Unakoti – Ancient rock carvings (50 km)</li>
+            <li>Dumboor Lake – Scenic boating (40 km)</li>
+            <li>Chobimura – River and rock art (60 km)</li>
+            <li>Udaipur & Matabari Temples (30 km)</li>
+            <li>Pilak Archaeological Site (45 km)</li>
+            <li>Sabroom Bridge – Gateway to Bangladesh (100 km)</li>
+        </ul>
+    </section>
+
+    <section id="booking" class="container">
+        <h2>Book Your Stay</h2>
+        <p>Reserve directly or via our partners:</p>
+        <ul>
+            <li><a href="#">Direct Booking</a></li>
+            <li><a href="https://www.airbnb.com/" target="_blank">Airbnb</a></li>
+            <li><a href="https://www.makemytrip.com/" target="_blank">MakeMyTrip</a></li>
+        </ul>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> Narshingarh PTC Road, Agartala, Tripura – 799009</p>
+        <p><strong>Phone / WhatsApp:</strong> <a href="tel:+919437806105">94378 06105</a></p>
+        <p><strong>Email:</strong> <a href="mailto:sarkar.villa93@gmail.com">sarkar.villa93@gmail.com</a></p>
+        <div style="margin-top: 1rem;">
+            <iframe width="100%" height="300" frameborder="0" style="border:0"
+                src="https://maps.google.com/maps?q=23.9102092,91.2593602&z=15&output=embed" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Niralay Homestay. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
